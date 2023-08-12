@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us and FAQ</title>
+    <style>
+        /* Your existing CSS styles */
+        h1 {
+            color: blue;
+            text-align: center;
+            background-color: black;
+        }
+        h2 {
+            align-items: start;
+            color: blueviolet;
+        }
+        /* Additional CSS for FAQ */
+        .accordion {
+            display: block;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .panel {
+            display: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+        <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <ul class="nav-nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="UserLandingHome.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contect.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <h2>Developer Details:</h2>
+    <hr>
+    <p>My name is Saurabh Rai and I'm from UP Deoria. Currently, I'm living in Wazirabad Delhi. I have done my graduation in Computer Science Engineering from AKTU University Lucknow, and the college name is Delhi Institute of Engineering And Technology Meerut. I have a CGPA of 7.0 in my graduation. Thank you!</p>
+
+    <h1>Support Team</h1>
+    <p>If you need assistance or have any questions, please don't hesitate to contact our support team.</p>
+
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <p>Click on a question to see the answer:</p>
+
+    <div class="accordion">
+        <h3>How do I create an account?</h3>
+        <div class="panel">
+            <p>You can create an account by visiting our registration page and providing the required information.</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <h3>What payment methods do you accept?</h3>
+        <div class="panel">
+            <p>We accept various payment methods, including credit/debit cards and online payment services. Please visit our payment options page for more details.</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <h3>How can I track my Booking?</h3>
+        <div class="panel">
+            <p>You can track your Booking by logging into your account and navigating to the Booking tracking section. You'll find real-time updates on your order's status.</p>
+        </div>
+    </div>
+
+    <!-- Add more FAQ items as needed -->
+
+    <!-- JavaScript for FAQ functionality -->
+    <script>
+        // Get all accordion elements
+        var accordions = document.querySelectorAll(".accordion");
+
+        // Add click event listeners to toggle the panel
+        accordions.forEach(function (accordion) {
+            var panel = accordion.querySelector(".panel");
+            var question = accordion.querySelector("h3");
+
+            question.addEventListener("click", function () {
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        });
+    </script>
+    <footer class="bg-dark text-center text-white py-3">
+    <p>&copy; 2023 Airline flight team. All rights reserved.</p>
+  </footer>
+    
+</body>
+</html>

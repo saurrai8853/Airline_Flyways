@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Form with CSS</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+body{
+    background-image: url(/supporttram.jpg);
+    background-size: cover;
+}
+
+  </style>
+
+</head>
+<body>
+  <button ><a href="UserLandingHome.html">Home</a></button>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+</body><br>
+<footer class="bg-dark text-center text-white py-3" style="text-align: center;">
+    <p>&copy; 2023 flyAway-Team. All rights reserved.</p>
+  </footer>
+</html>
